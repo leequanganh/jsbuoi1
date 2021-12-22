@@ -4,10 +4,52 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <title>Document</title>
 </head>
-<body>
+<body style="padding-top: 100px;width: 20%; margin: 0 auto;">
+    <span>TÍNH TIỀN LƯƠNG</span>
 
+    <div  class="input-group mb-3">
+
+        <input id="songay"  class="form-control" type="number" placeholder="Nhập số ngày làm " >
+        <button onclick="tinhtien()" class="btn btn-outline-secondary" type="button" id="button-addon1">Tính tiền <br> (100.000/ngày)</button>
+        <p></p> 
+      </div>
+      <span style="font-weight: 700;">TRUNG BÌNH CỘNG 5 SỐ </span>
+      <div>
+        <input id="1" type="number" placeholder="số thứ nhất">
+        <input id="2" type="number" placeholder="số thứ hai">
+        <input id="3" type="number" placeholder="số thứ ba">
+        <input id="4" type="number" placeholder="số thứ tư">
+        <input id="5" type="number" placeholder="số thứ năm">
+        <br>
+        <button style="font-weight:bold;" onclick="tinh()">KẾT QUẢ </button>
+        <br>
+        <p  style="font-weight: 700;" id="ketqua"></p>
+      </div>
+      <span>USD -> VND</span>
+      <div>
+          <input id="usd" type="number" placeholder="Nhập giá trị USD ">
+          <button onclick="doitien()">KẾT QUẢ</button>
+          <br>
+           <span>1 usd = 23.500 vnd</span>
+           <p style="font-weight: 700;" id="ketquausd"></p>
+          <p></p>
+      </div>
+      <span>HÌNH CHỮ NHẬT</span>
+      <div>
+          <input id="chieudai" type="number" placeholder="Chiều dài hình chữ nhật">
+          <input id="chieurong" type="number" placeholder="Chiều rộng hình chữ nhật">
+          <button onclick="hcn()">KẾT QUẢ</button>
+          <p id="ketquahcn"></p>
+      </div>
+      <span>TÔNG 2 KÍ SỐ </span>
+      <div>
+        <input id="haichuso" type="number" placeholder="Nhập số có 2 chữ số">
+        <button onclick="tong()">KẾT QUẢ</button>
+        <p id="ketquatong2chuso"></p>
+      </div>
 
 
 
@@ -17,7 +59,9 @@
     <script src="./bai3.js"></script>
     <script src="./bai4.js"></script>
     <script src="./bai5.js"></script>
-
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 
 
 </body>
